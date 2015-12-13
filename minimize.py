@@ -8,9 +8,6 @@ from coopr.pyomo import *
 from oauth2client.client import SignedJwtAssertionCredentials
 import gspread
 
-def transactions():
-    pass
-
 
 def sign_in_gspread():
 
