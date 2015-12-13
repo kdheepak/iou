@@ -1,3 +1,3 @@
-# Minimize transactions
+# iou
 
-Use Pyomo for minimizing transactions
+A python module using networkx, pyomo and ipopt to solve for the optimally minimum number of transactions to settle debts/expenses between friends.
