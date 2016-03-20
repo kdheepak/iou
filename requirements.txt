@@ -1,0 +1,5 @@
+pyomo==4.2.10784
+pyutilib==5.2.3601
+six==1.10.0
+colorama==0.3.7
+click==6.3
