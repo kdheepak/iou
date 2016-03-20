@@ -21,6 +21,10 @@ A python module using networkx, pyomo and ipopt to solve for the optimally minim
 
         iou --data iou/data/transactions.csv
 
+    OR
+
+        iou --data iou/data/transactions.csv --verbose
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/kdheepak89/iou/master/screenshots/screenshot2.png" align="center" width="400" >
 </p>
