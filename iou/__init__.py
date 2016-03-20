@@ -16,7 +16,7 @@ def __get_version():
 
 exec(__get_version())
 
-__title__ = "iou"
+__title__ = "py-iou"
 __summary__ = "A python package to find optimal number of transactions betweeen friends"
 __uri__ = "https://github.com/kdheepak89/iou"
 
