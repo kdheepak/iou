@@ -17,7 +17,7 @@ A python module using networkx, pyomo and ipopt to solve for the optimally minim
 
 ## Run
 
-* Run the following to find the optimal order using input from individual files
+* Run the following to find the optimal transactions using input from transactions.csv
 
         iou --data iou/data/transactions.csv
 
