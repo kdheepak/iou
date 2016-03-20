@@ -21,7 +21,7 @@ def main(**kwargs):
     color = kwargs['color']
 
     try:
-        if not any([kwargs[key] for key in kwargs]):
+        if not any([kwargs[key] for key in ['data']]):
             help_str = "{}".format(click.get_current_context().get_help())
             click.secho(help_str)
             click.get_current_context().exit()
