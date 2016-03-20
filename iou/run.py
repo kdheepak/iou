@@ -54,7 +54,7 @@ def main(**kwargs):
             for row_number, row in enumerate(array):
                 number_of_contributors = sum([float(item) for item in row[3:]])
 
-                click.secho("{number_of_contributors}".format(number_of_contributors=int(number_of_contributors)), bold=True, fg=color, nl=False)
+                click.secho("{number_of_contributors}".format(number_of_contributors=number_of_contributors), bold=True, fg=color, nl=False)
                 click.secho(" people owe ", nl=False)
                 click.secho("{person}".format(person=row[2]), bold=True, fg=color, nl=False)
                 click.secho(" ", nl=False)
