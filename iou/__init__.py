@@ -10,8 +10,8 @@ __all__ = ("__title__",
 
 def __get_version():
     from os import path
-    here = path.abspath(path.dirname(__file__))
-    return (open(path.join(here, 'version.py')).read())
+    f = path.abspath(path.dirname(__file__))
+    return (open(path.join(f, 'version.py')).read())
 
 
 exec(__get_version())
