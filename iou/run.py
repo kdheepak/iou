@@ -13,6 +13,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 @click.option('--data', type=click.Path(), help='Path to transactions.csv')
 @click.option('--verbose', default=False, is_flag=True, help='Verbose mode')
 @click.option('--color', default='green', help='Color of text')
+@click.option('--verbose-color', default='white', help='Color of text')
 @click.version_option(version.__version__, '-v', '--version')
 def main(**kwargs):
     """iou - Find optimal transactions."""
@@ -48,6 +49,18 @@ def main(**kwargs):
                     ReferenceModel.solve(model)
 
         if kwargs['verbose']:
+            color = kwargs['verbose_color']
+            click.echo("")
+            for row_number, row in enumerate(array):
+                number_of_contributors = sum([float(item) for item in row[3:]])
+
+                click.secho("{number_of_contributors}".format(number_of_contributors=int(number_of_contributors)), bold=True, fg=color, nl=False)
+                click.secho(" people owe ", nl=False)
+                click.secho("{person}".format(person=row[2]), bold=True, fg=color, nl=False)
+                click.secho(" ", nl=False)
+                click.secho("{amount}".format(amount=row[1]), bold=True, fg=color, nl=False)
+                click.secho(" for ", nl=False)
+                click.secho("{expense}".format(expense=row[0]), bold=True, fg=color)
 
             click.echo("")
             for person, value in net_value.items():
@@ -55,7 +68,7 @@ def main(**kwargs):
                     click.secho("{person}".format(
                         person=person), bold=True, fg=color, nl=False)
                     click.secho("'s net spend =", nl=False)
-                    click.secho(" {value}".format(value=-value), bold=True, fg=color)
+                    click.secho(" {value}".format(value=value), bold=True, fg=color)
 
             click.echo("")
             for person, value in net_value.items():
@@ -63,9 +76,11 @@ def main(**kwargs):
                     click.secho("{person}".format(
                         person=person), bold=True, fg=color, nl=False)
                     click.secho("'s net spend =", nl=False)
-                    click.secho(" {value}".format(value=-value), bold=True, fg=color)
+                    click.secho(" {value}".format(value=value), bold=True, fg=color)
 
         click.echo("")
+
+        color = kwargs['color']
 
         click.secho("iou results:")
 
@@ -75,11 +90,11 @@ def main(**kwargs):
             if model.Amount[i].value == 0:
                 pass
             else:
-                click.secho("{}".format(i[1]), fg=color, bold=True, nl=False)
+                click.secho("{}".format(i[0]), fg=color, bold=True, nl=False)
                 click.secho(" owes", nl=False)
-                click.secho(" {}".format(i[0]), fg=color, bold=True, nl=False)
+                click.secho(" {}".format(i[1]), fg=color, bold=True, nl=False)
                 click.secho(" a total of ", nl=False)
-                click.secho("$ {0:.2f}".format(model.Amount[i].value), fg=color, bold=True)
+                click.secho("${0:.2f}".format(model.Amount[i].value), fg=color, bold=True)
 
         click.echo("")
 
