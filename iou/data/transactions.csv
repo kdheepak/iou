@@ -1,0 +1,19 @@
+Expense,Amount,Paid by,John Doe,Joe Bloggs,Michel Dupont,Anamika,Esposito,Nanashi No Gombe,Hans Meier
+Flight: Chicago-Denver,$520.60,John Doe,1,1,1,1,1,1,0
+Flight: Denver-Chicago,$474.00,John Doe,1,1,1,1,1,1,0
+Flight: Denver-Chicago (check in),$40.00,John Doe,0,0,0,1,0,0,0
+Air bnb,$320.00,Joe Bloggs,1,1,1,0,1,1,1
+Museum,$149.70,John Doe,1,1,1,1,1,1,0
+Museum (Additional),$24.95,John Doe,0,0,0,0,0,0,1
+Hotel at Denver,$143.86,Joe Bloggs,1,1,1,1,1,1,1
+Taxi to Dinner,$39.78,Joe Bloggs,1,1,1,0,1,1,1
+Taxi from Dinner to Airbnb,$12.88,Joe Bloggs,1,1,1,0,1,1,1
+Taxi from Airbnb to Airport,$10.15,John Doe,1,1,1,1,1,1,1
+Rental car,$191.03,John Doe,1,1,1,1,1,1,1
+rental car (insurance),$24.95,John Doe,1,1,1,1,1,1,1
+Brunch,$120.00,John Doe,1,1,1,0,1,1,0
+Parking in Denver,$20.00,John Doe,1,1,1,0,1,1,1
+Extra hotel room,$125.84,Hans Meier,1,1,1,1,1,1,1
+Gas,$68.55,John Doe,1,1,1,1,1,1,1
+Parking in Chicago,$20.00,John Doe,1,1,1,1,1,1,1
+Chicago airport parking,$24.00,John Doe,1,1,1,1,1,1,1
