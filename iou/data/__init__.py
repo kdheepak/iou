@@ -11,7 +11,7 @@ def get_transactions_from_file(f):
 
 def create_graph(array, people):
 
-    G = nx.DiGraph()
+    G = nx.MultiDiGraph()
 
     for person_name in people:
         if person_name is None:
