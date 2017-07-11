@@ -18,7 +18,7 @@ exec(__get_version())
 
 __title__ = "py-iou"
 __summary__ = "A python package to find optimal number of transactions betweeen friends"
-__uri__ = "https://github.com/kdheepak89/iou"
+__uri__ = "https://github.com/kdheepak/iou"
 
 __author__ = "Dheepak Krishnamurthy"
 __email__ = "kdheepak89@gmail.com"

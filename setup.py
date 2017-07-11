@@ -1,5 +1,18 @@
 from setuptools import setup
-import iou
+try:
+    import iou
+except ImportError:
+    iou = object()
+    iou.__title__ = "py-iou"
+    iou.__summary__ = "A python package to find optimal number of transactions betweeen friends"
+    iou.__uri__ = "https://github.com/kdheepak/iou"
+
+    iou.__author__ = "Dheepak Krishnamurthy"
+    iou.__email__ = "kdheepak89@gmail.com"
+
+    iou.__license__ = "Revised BSD License"
+    iou.__copyright__ = "Copyright 2016 Dheepak Krishnamurthy"
+
 from os import path
 from pip.req import parse_requirements
 

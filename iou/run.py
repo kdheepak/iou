@@ -2,9 +2,9 @@
 """Run module."""
 
 import click
-import data
-import version
-import ReferenceModel
+from . import data
+from . import version
+from . import ReferenceModel
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
