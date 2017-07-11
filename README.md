@@ -15,6 +15,12 @@ A python module using networkx, pyomo and ipopt to solve for the optimally minim
 
 * Install [`ipopt`](https://projects.coin-or.org/Ipopt)
 
+If you have [Anaconda](https://www.continuum.io/downloads) or [Miniconda](https://conda.io/miniconda.html), you can install it using the following command.
+
+```bash
+conda install -c conda-forge ipopt
+```
+
 ## Run
 
 * Run the following to find the optimal transactions using input from transactions.csv
