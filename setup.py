@@ -12,6 +12,7 @@ except ImportError:
 
     iou.__license__ = "Revised BSD License"
     iou.__copyright__ = "Copyright 2016 Dheepak Krishnamurthy"
+    iou.__version__ = '1.1.1'
 
 from os import path
 from pip.req import parse_requirements
